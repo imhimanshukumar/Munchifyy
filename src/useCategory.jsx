@@ -39,36 +39,5 @@ export default useCategory;
 
 
 
-// import { useState, useEffect } from "react";
-// import { useSelector } from "react-redux";
-
-// const useCategory = () => {
-//   const location = useSelector((state) => state.address.location);
-//   const [categories, setCategories] = useState([]);
-
-//   useEffect(() => {
-//     if (location && location.lat && location.lng) {
-//       fetchCategory(location.lat, location.lng);
-//     }
-//   }, [location]);
-
-//   const fetchCategory = async (lat, lng) => {
-//     try {
-//       const response = await fetch(
-//         `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
-//       );
-//       const data = await response.json();
-
-//       setCategories(data?.data?.cards[0]?.card?.card?.imageGridCards?.info || []);
-//     } catch (error) {
-//       console.error("Error fetching categories:", error);
-//       setCategories([]);
-//     }
-//   };
-
-//   return categories;
-// };
-
-// export default useCategory;
 
 
